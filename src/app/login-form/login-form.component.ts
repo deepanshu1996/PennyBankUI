@@ -17,7 +17,7 @@ export class LoginFormComponent implements OnInit {
     var username = e.target.elements[0].value;
     var password = e.target.elements[1].value;
     if(username == 'admin' && password == 'admin'){
-      this.router.navigate(['dashboard']);
+      this.router.navigate(['banks']);
     }
   }
 

@@ -9,6 +9,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { ListAccountsComponent} from './list-accounts/list-accounts.component';
 import { HttpModule } from '@angular/http';
+import { BanksComponent } from './banks/banks.component';
 
 const routes :Routes = [
   {
@@ -22,6 +23,10 @@ const routes :Routes = [
   {
     path: 'list-accounts',
     component: ListAccountsComponent
+  },
+  {
+    path: 'banks',
+    component: BanksComponent
   }
 ]
 
@@ -32,6 +37,7 @@ const routes :Routes = [
     LoginFormComponent,
     DashboardComponent,
     ListAccountsComponent,
+    BanksComponent,
   ],
   imports: [
     RouterModule.forRoot(routes),
